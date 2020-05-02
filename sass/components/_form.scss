@@ -29,7 +29,7 @@
         }
 
         &:focus:invalid {
-            border-bottom: 3px solid $color-secondary-dark;
+            border-bottom: 3px solid darkorange;
         }
     
         &::-webkit-input-placeholder {
@@ -39,16 +39,17 @@
 
 
     &__label {
-        font-size: 1.2rem;
-        font-weight: 700;
+        font-size: 1.7rem;
+        font-weight: 500;
         margin-left: 2rem;
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+        transform: translateY(-9rem);
     }
 
     &__input:placeholder-shown + &__label {
-        opacity: 0;
+        opacity: 1;
         visibility: hidden;
         transform: translateY(-4rem);
     }
@@ -57,8 +58,13 @@
         width: 49%;
         display: inline-block;
         position: relative;
+        margin-bottom: 2rem;
 
         @include respond(tab-port) {
+            margin-bottom: 2rem;
+        }
+
+        @include respond(phone) {
             width: 100%;
             margin-bottom: 2rem;
         }

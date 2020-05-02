@@ -6,15 +6,14 @@
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+        <link rel="stylesheet" href="css/icon-font-linea.css">
 
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="img/logo-2/logo_transparent.png">
         
-        <title>Natours | Exciting tours for adventurous people</title>
+        <title>Withlocals | Enjoy a city like a local</title>
     </head>
-    <body>
-
+    <body class="container">
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -24,451 +23,471 @@
             <div class="navigation__background">&nbsp;</div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link">About us</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+                    <li class="navigation__item"><a href="#about" class="navigation__link">About Bo</a></li>
+                    <li class="navigation__item"><a href="#features" class="navigation__link">Why Bo</a></li>
+                    <li class="navigation__item"><a href="#tours" class="navigation__link">Popular Bo</a></li>
+                    <li class="navigation__item"><a href="#reviews" class="navigation__link">Review Bo</a></li>
+                    <li class="navigation__item"><a href="#booking" class="navigation__link">Contact Bo</a></li>
                 </ul>
             </nav>
         </div>
-
+        
         <header class="header">
             <div class="header__logo-box">
-                <img src="img/logo-white.png" alt="Logo" class="header__logo">
+                <img src="img/logo-2/logo_transparent.png" alt="Logo" class="header__logo">
             </div>
 
             <div class="header__text-box">
                     <h1 class="heading-primary">
-                        <span class="heading-primary--main">Outdoors</span>
-                        <span class="heading-primary--sub">is where life happens</span>
+                        <span class="heading-primary--main">Travelling</span>
+                        <span class="heading-primary--sub">has never been so good</span>
                     </h1>
-                <a href="#" class="btn btn--white btn--animated">Discover my tours</a>
+                <a href="#tours" class="btn btn--pink btn--animated">Travel with Bo</a>
             </div>
         </header>
         
-        <main>
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Exciting tours for adventurous people
-                    </h2>
+        <section class="about" id="about">
+            <div class="section__heading">
+                <h2 class="heading-secondary">
+                    About Bo
+                </h2>
+            </div>
+
+            <div class="about__profile">
+                <p class="u-margin-bottom-medium">
+                    My name is Bo Li, orginally from China. I have been living in Sydney for more than four years now. As a Sydneysider, this city never fails to impress me. Authentic Asian food, finest beaches, splendid parks, and so much more. Whether you are a enthusiastic person or a quiet soul, everyone can find a place to stay or things to do here.
+                </p>
+                <p class="u-margin-bottom-medium">
+                    If you want to know a bit more about me, please click the link below.
+                </p>
+                <a href="#" class="btn-text">Learn more &rarr;</a>
+            </div>
+
+            <div class="composition">
+                <img 
+                    alt="Photo-1"
+                    class="composition__photo composition__photo--p1"
+                    src="img/about-1.jpg">
+                <img 
+                    alt="Photo-2"
+                    class="composition__photo composition__photo--p2"
+                    src="img/about-2.jpg">
+                <img 
+                    alt="Photo-3"
+                    class="composition__photo composition__photo--p3"
+                    src="img/about-3.jpg">
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="section__heading">
+                <h2 class="heading-secondary">
+                    Why Bo
+                </h2>
+            </div>
+
+            <div class="feature-box">
+                <i class="feature-box__icon icon-basic-gear"></i>
+                <h3 class="heading-tertiary u-margin-bottom-small">Professional</h3>
+                <p class="feature-box__text">
+                    I have been living in and exploring Sydney for more than 4 years now. I love travelling and wandering around. Your will experience one of the most professionlism in your tours.
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <i class="feature-box__icon icon-basic-heart"></i>
+                <h3 class="heading-tertiary u-margin-bottom-small">Personalised</h3>
+                <p class="feature-box__text">
+                    All tours will be personalised just for you. You can tell me your preference on attractions, food and activities etc, and I'll tailor the whole experience based on your preference to ensure you get the fullest of your journey.
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <i class="feature-box__icon icon-basic-key"></i>
+                <h3 class="heading-tertiary u-margin-bottom-small">Private</h3>
+                <p class="feature-box__text">
+                    All tours conducted by me are 100% private, just you and your loved ones. Hassle free from other people.
+                </p>
+            </div>
+        </section>
+
+        <section class="tours" id="tours">
+            <div class="tours__heading">
+                <h2 class="heading-secondary">
+                    Popular Bo
+                </h2>
+            </div>
+
+            <div class="card">
+
+                <div class="card__picture card__picture--1">
+                    &nbsp;
+                </div>
+                <h4 class="card__heading">
+                    <span class="card__heading-span">
+                        Food Tour 10 Tastings
+                    </span>    
+                </h4>
+                <h5 class="card__details-title">Sydney's Favorite Food Tour: 10 Tastings</h5> 
+                <div class="card__details-rating">
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <span>28</span>
+                </div>
+                <div class="card__details-duration">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-hour-glass"></use>
+                    </svg>
+                    <p>3 hours</p>
+                </div>
+                <div class="card__details-type">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-map"></use>
+                    </svg>
+                    <p>Food tour</p>
+                </div>
+                <div class="card__details-price">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-coin-dollar"></use>
+                    </svg>
+                    <p>€59 pp </p>
+                </div>
+                <div class="card__details-private">
+                        <svg>
+                        <use href="img/symbol-defs.svg#icon-users"></use>
+                    </svg>
+                    <p>Private tour</p>
                 </div>
 
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
-                        <p class="paragraph">
-                            orem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veritatis cumque rerum quod pariatur sapiente eum ipsum. Rerum, quasi, fugiat id deserunt voluptatem sed reprehenderit libero aperiam dolor quibusdam voluptate.
-                        </p>
-
-                        <h3 class="heading-tertiary u-margin-bottom-small">live adventures like you never have before</h3>
-                        <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore necessitatibus voluptatibus repellen.
-                        </p>
-
-                        <a href="#" class="btn-text">Learn more &rarr;</a>
-                        
-                    </div>
-                    <div class="col-1-of-2">
-                        <div class="composition">
-
-                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
-                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
-                                alt="Photo-1"
-                                class="composition__photo composition__photo--p1"
-                                src="img/nat-1-large.jpg">
-
-                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
-                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
-                                alt="Photo-2"
-                                class="composition__photo composition__photo--p2"
-                                src="img/nat-2-large.jpg">
-
-                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
-                                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" 
-                                alt="Photo-3"
-                                class="composition__photo composition__photo--p3"
-                                src="img/nat-3-large.jpg">
-                            <!---
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                            -->
-                        </div>
-                    </div>
+                <div class="card__cta">
+                    <a href="https://www.withlocals.com/experience/sydney-favorite-food-tour-10-tastings-79ffde62/locals/?adults=4&children=0&hostId=4985b7c0-f579-430e-b84e-6f2214eb04d5" target="_blank" class="btn btn--pink">Book now!</a>
                 </div>
-            </section>
+            </div>
 
-            <section class="section-features">
+            <div class="card">
 
-                <div class="row">
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-world"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore necessitatibus voluptatibus repellen.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-compass"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore necessitatibus voluptatibus repellen.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-map"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore necessitatibus voluptatibus repellen.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-heart"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore necessitatibus voluptatibus repellen.
-                            </p>
-                        </div>
-                    </div>
+                <div class="card__picture card__picture--2">
+                    &nbsp;
                 </div>
-            </section>
-
-            <section class="section-tours" id="section-tours">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Most popular tours
-                    </h2>
+                <h4 class="card__heading">
+                    <span class="card__heading-span">
+                        Highlights & Hidden Gems
+                    </span>    
+                </h4>
+                <h5 class="card__details-title">Best of Sydney Tour: Highlights & Hidden Gems</h5> 
+                <div class="card__details-rating">
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <span>20</span>
+                </div>
+                <div class="card__details-duration">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-hour-glass"></use>
+                    </svg>
+                    <p>3 hours</p>
+                </div>
+                <div class="card__details-type">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-map"></use>
+                    </svg>
+                    <p>Walking tour</p>
+                </div>
+                <div class="card__details-price">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-coin-dollar"></use>
+                    </svg>
+                    <p>€24 pp </p>
+                </div>
+                <div class="card__details-private">
+                        <svg>
+                        <use href="img/symbol-defs.svg#icon-users"></use>
+                    </svg>
+                    <p>Private tour</p>
                 </div>
 
-                <div class="row">
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--1">
-                                    &nbsp;
+                <div class="card__cta">
+                    <a href="https://www.withlocals.com/experience/best-of-sydney-tour-highlights-hidden-gems-baa870bf/locals/?adults=4&children=0&hostId=4985b7c0-f579-430e-b84e-6f2214eb04d5" target="_blank" class="btn btn--pink">Book now!</a>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <div class="card__picture card__picture--3">
+                    &nbsp;
+                </div>
+                <h4 class="card__heading">
+                    <span class="card__heading-span">
+                        Kickstart Tour
+                    </span>    
+                </h4>
+                <h5 class="card__details-title">90 Minutes Sydney Kickstart Tour</h5> 
+                <div class="card__details-rating">
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <span>17</span>
+                </div>
+                <div class="card__details-duration">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-hour-glass"></use>
+                    </svg>
+                    <p>1.5 hours</p>
+                </div>
+                <div class="card__details-type">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-map"></use>
+                    </svg>
+                    <p>Walking tour</p>
+                </div>
+                <div class="card__details-price">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-coin-dollar"></use>
+                    </svg>
+                    <p>€24 pp </p>
+                </div>
+                <div class="card__details-private">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-users"></use>
+                    </svg>
+                    <p>Private tour</p>
+                </div>
+
+                <div class="card__cta">
+                    <a href="https://www.withlocals.com/experience/90-minutes-sydney-kickstart-tour-9cbce215/locals/?adults=4&children=0&hostId=4985b7c0-f579-430e-b84e-6f2214eb04d5" target="_blank" class="btn btn--pink">Book now!</a>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <div class="card__picture card__picture--4">
+                    &nbsp;
+                </div>
+                <h4 class="card__heading">
+                    <span class="card__heading-span card__heading-span--4">
+                        Ghosts, Myths & Legends
+                    </span>    
+                </h4>
+                <h5 class="card__details-title">Spooky Sydney Night Tour: Ghosts, Myths & Legends</h5> 
+                <div class="card__details-rating">
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <svg class="card__details-star">
+                        <use href="img/symbol-defs.svg#icon-star-full"></use>
+                    </svg>
+                    <span>14</span>
+                </div>
+                <div class="card__details-duration">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-hour-glass"></use>
+                    </svg>
+                    <p>3 hours</p>
+                </div>
+                <div class="card__details-type">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-map"></use>
+                    </svg>
+                    <p>Night tour</p>
+                </div>
+                <div class="card__details-price">
+                    <svg>
+                        <use href="img/symbol-defs.svg#icon-coin-dollar"></use>
+                    </svg>
+                    <p>€12 pp </p>
+                </div>
+                <div class="card__details-private">
+                        <svg>
+                        <use href="img/symbol-defs.svg#icon-users"></use>
+                    </svg>
+                    <p>Private tour</p>
+                </div>
+
+                <div class="card__cta">
+                    <a href="https://www.withlocals.com/experience/spooky-sydney-night-tour-ghosts-myths-legends-2388e8c7/locals/?adults=4&children=0&hostId=4985b7c0-f579-430e-b84e-6f2214eb04d5" target="_blank" class="btn btn--pink">Book now!</a>
+                </div>
+            </div>
+
+            <div class="tours__cta">
+                <a href="#" class="btn btn--pink">Discover all tours</a>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/beach.mp4" type="video/mp4">
+                    <source src="img/beach.webm" type="video/webm">
+                        Your browser is not supported!
+                </video>
+            </div>
+            <div class="section__heading">
+                <h2 class="heading-secondary">
+                    Review Bo
+                </h2>
+            </div>
+
+            <figure class="review">
+                <blockquote class="review__text">
+                    Bo is such a nice guy. He is very professional and knowledgeable of Sydney. I enjoy the experience immensely viewing the secret garden, Luna park and cockatoo island. Would definitely recommend Bo Li for a insightful tour.
+                </blockquote>
+                <figcaption class="review__user">
+                    <img src="img/user-1.jpg" alt="User 1" class="review__photo">
+                    <div class="review__user-box">
+                        <p class="review__user-name">Matthew</p>
+                        <p class="review__user-date">Feb 8th, 2020</p>
+                    </div>
+                    <div class="review__rating">4.9</div>
+                </figcaption>
+            </figure>
+
+            <figure class="review">
+                <blockquote class="review__text">
+                    The food tasting tour with Bo in Sydney was a delight. I was able to try many different authentic foods along the way. Bo is so energetic and outgoing, it made the food tour so much more enjoyable. If you want to have the same experience as me, you should do yourself a favour and book a tour with Bo. ;)
+                </blockquote>
+                <figcaption class="review__user">
+                    <img src="img/user-2.jpg" alt="User 2" class="review__photo">
+                    <div class="review__user-box">
+                        <p class="review__user-name">Narelle</p>
+                        <p class="review__user-date">Feb 8th, 2020</p>
+                    </div>
+                    <div class="review__rating">4.8</div>
+                </figcaption>
+            </figure>
+
+            <div class="reviews__cta">
+                <a href="#" class="btn-text">Read all reviews &rarr;</a>
+            </div>
+        </section>
+
+
+        <section class="booking" id="booking">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Contact Bo
+                                </h2>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="small" name="size">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Solo
+                                    </label>
                                 </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--1">
-                                        The Sea Explore
-                                    </span>
-                                    
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>3 day tour</li>
-                                        <li>Up to 30 people</li>
-                                        <li>2 tour guides</li>
-                                        <li>Sleep in cozy hotels</li>
-                                        <li>Difficulty: easy</li>
-                                    </ul>
+
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="large" name="size">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Group</label>
                                 </div>
                             </div>
-                            <div class="card__side card__side--back card__side--back--1">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$297</p> 
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
-                                </div>
+
+                            <div class="form__group">
+                                <a href="mailto:boahlee@hotmail.com" target="_blank" class="btn btn--pink">Send</a>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">
-                                        The Forest Hiker
-                                    </span>
-                                    
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>7 day tour</li>
-                                        <li>Up to 40 people</li>
-                                        <li>6 tour guides</li>
-                                        <li>Sleep in provided tents</li>
-                                        <li>Difficulty: medium</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back--2">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$497</p> 
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--3">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--3">
-                                        The Snow Adventurer
-                                    </span>
-                                    
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>5 day tour</li>
-                                        <li>Up to 15 people</li>
-                                        <li>3 tour guides</li>
-                                        <li>Sleep in provided tents</li>
-                                        <li>Difficulty: hard</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back--3">
-                                <div class="card__cta">
-                                    <div class="card__price-box">
-                                        <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$897</p> 
-                                    </div>
-                                    <a href="#popup" class="btn btn--white">Book now!</a>
-                                </div>
-                            </div>
-                        </div> 
+                        </form>
                     </div>
                 </div>
+        </section>
 
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn btn--green">Discover all tours</a>
-                </div>
-            </section>
-
-            <section class="section-stories">
-                <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/video.mp4" type="video/mp4">
-                        <source src="img/video.webm" type="video/webm">
-                            Your browser is not supported!
-                    </video>
-                </div>
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        We make people genuinely happy
-                    </h2>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img src="img/nat-8.jpg" alt="Person on tour" class="story__img">
-                            <figcaption class="story__caption">MARY SMITH</figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
-                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, blanditiis! Molestiae, et consequatur? Sequi aliquid officiis eaque ullam voluptatibus provident soluta quod voluptate magni in vel, beatae explicabo reiciendis non.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img src="img/nat-9.jpg" alt="Person on tour" class="story__img">
-                            <figcaption class="story__caption">BEN JAMING</figcaption>
-                        </figure>
-                        <div class="story__text">
-                            <h3 class="heading-tertiary u-margin-bottom-small">WOW my life is completely different now</h3>
-                            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, blanditiis! Molestiae, et consequatur? Sequi aliquid officiis eaque ullam voluptatibus provident soluta quod voluptate magni in vel, beatae explicabo reiciendis non.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn-text">Read all stories &rarr;</a>
-                </div>
-            </section>
-
-            <section class="section-book">
-                <div class="row">
-                    <div class="book">
-                        <div class="book__form">
-                            <form action="#" class="form">
-                                <div class="u-margin-bottom-medium">
-                                    <h2 class="heading-secondary">
-                                        Start booking now
-                                    </h2>
-                                </div>
-
-                                <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                                    <label for="name" class="form__label">Full name</label>
-                                </div>
-
-                                <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                                    <label for="email" class="form__label">Email address</label>
-                                </div>
-
-                                <div class="form__group u-margin-bottom-medium">
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="small" name="size">
-                                        <label for="small" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Small tour group
-                                        </label>
-                                    </div>
-
-                                    <div class="form__radio-group">
-                                        <input type="radio" class="form__radio-input" id="large" name="size">
-                                        <label for="large" class="form__radio-label">
-                                            <span class="form__radio-button"></span>
-                                            Large tour group</label>
-                                    </div>
-                                </div>
-
-                                <div class="form__group">
-                                    <button class="btn btn--green">Next step &rarr;</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <picture class="footer__logo">
-                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
-                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
-                </picture>
+                    <img src="img/logo-2/logo_transparent.png" alt="Logo" class="footer__logo">
+             </div>
                 
             </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                        </ul>
-                    </div>
+            <div class="footer__social-media">
+                <div class="footer__item">
+                    <a href="" class="footer__link">
+                        <svg>
+                            <use href="img/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
                 </div>
+                <div class="footer__item">
+                    <a href="" class="footer__link">
+                        <svg>
+                            <use href="img/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <a href="" class="footer__link">
+                        <svg>
+                            <use href="img/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
-                <div class="col-1-of-2">
-                    <p class="footer__copyright">
-                        Built my <a href="#" class="footer__link">Bo Li</a> for his online course <a href="#" class="footer__link">Advanced CSS and SASS</a>.Copyright &copy; by Jonas Schmedtmann. Inspired by Jonas Schmedtmann.
-                    </p>
+            <div class="footer__copyright">
+                <div class="footer__copyright-text">
+                    &copy; 2020 Made with <span>&hearts;</span> by Bo Li
                 </div>
             </div>
         </footer>
-
-        <div class="popup" id="popup">
-            <div class="popup__content">
-                <div class="popup__left">
-                    <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
-                    <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
-                </div>
-                <div class="popup__right">
-                    <a href="#section-tours" class="popup__close">&times;</a>
-                    <h2 class="heading-secondary u-margin-bottom-medium">Start booking now</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
-                    <p class="popup__text">
-                        Facilis maxime voluptatum aperiam praesentium fuga provident facere, saepe accusamus aliquam nisi eius dignissimos nemo repellat quisquam animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maxime enim totam deserunt iusto voluptatum aperiam praesentium fuga provident facere, saepe accusamus aliquam nisi eius dignissimos nemo repellat quisquam animi.
-                    </p>
-                    <a href="#" class="btn btn--green">Book now</a>
-                </div>
-            </div>
-        </div>
-        <!-- 
-        <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 of 3
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    Col 2 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 of 4
-                </div>
-            </div>
-        </section> 
-        -->
-
     </body>
 </html>

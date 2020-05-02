@@ -2,7 +2,6 @@
     
     &__checkbox {
         display: none;
-
     }
 
     &__button {
@@ -57,15 +56,13 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1500;
+        z-index: -1;
 
         opacity: 0;
-        width: 0;
         transition: all .8s cubic-bezier(.5,-0.46,0,1.54);
     }
 
-    &__list {
-       
+    &__list {       
         position: absolute;
         top: 50%;
         left: 50%;
@@ -76,7 +73,6 @@
 
     &__item {
         margin: 1rem;
-
     }
 
     &__link {
@@ -105,11 +101,12 @@
     //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
         transform: scale(80);
+        opacity: .85;
     }
 
     &__checkbox:checked ~ &__nav {
         opacity: 1;
-        width: 100%;
+        z-index: 1500;
     }
 
     //ICON  
@@ -160,3 +157,4 @@
         transform: rotate(135deg);
     }
 }
+

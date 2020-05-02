@@ -1,83 +1,88 @@
 .footer {
-    background-color: $color-grey-dark-3;
-    padding: 10rem 0;
-    font-size: 1.4rem;
+    grid-column: full-start / full-end;
+    background-color: #3f3f3f;
+    padding: 5rem;
+    padding-bottom: 2rem;
+    font-size: 2.4rem;
     color: $color-grey-light-1;
 
+    &__social-media {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+        svg {
+            height: 4.5rem;
+            width: 5.5rem;
+            transition: all linear .3s; 
+            fill: $color-grey-dark;
+        }
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+        &:nth-child(2) {
+            margin-right: 3.5rem;
+        }
+        
+    }
+    
+
     @include respond(tab-port) {
-        padding: 8rem 0;
+        padding: 3rem 0;
     }
 
     &__logo-box {
         text-align: center;
-        margin-bottom: 8rem;
+        margin-bottom: 2rem;
 
         @include respond(tab-port) {
-            margin-bottom: 6rem;
+            margin-bottom: 1rem;
         }
     }
 
     &__logo {
         width: 15rem;
-        height: auto;
-    }
-
-    &__navigation {
-        border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
-        display: inline-block;
-
-        @include respond(tab-port) {
-            width: 100%;
-            text-align: center;
-        }
-    }
-
-    &__list {
-        list-style: none;
-    }
-
-    &__item {
-        display: inline-block;
-
-        &:not(:last-child) {
-            margin-right: 1.5rem;
-
-            @include respond(tab-port) {
-                margin-right: 1rem;
-            }
-        }
+        height: 15rem;
     }
 
     &__link {
 
-        &:link,
-        &:visited {
-            color: $color-grey-light-1;
-            background-color: $color-grey-dark-3;
-            text-decoration: none;
-            text-transform: uppercase;
-            display: inline-block;
-            transition: all .2s;
-        }
-
         &:hover,
         &:active {
-            color: $color-primary;
-            box-shadow: 0 1rem 2rem rgba($color-black, .4);
-            transform: rotate(5deg) scale(1.3);
+
+            svg {
+                fill: $color-primary;                
+            }
+           
         }
     }
 
     &__copyright {
-        border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
-        width: 80%;
-        float: left;
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-column-gap: 1.5rem;
+        align-items: center;
+        color: $color-grey-dark;
 
+        span {
+            color: $color-primary;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            background-color: currentColor;
+            height: 1px;
+        }
         @include respond(tab-port) {
-            width: 100%;
-            float: none;
+            margin: 0;
         }
     }
 }

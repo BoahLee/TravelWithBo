@@ -42,7 +42,7 @@
         }
     }
 
-    &--green {
+    &--pink {
         background-color: $color-primary;
         color: $color-white;
 
@@ -73,7 +73,7 @@
 .btn-text {
     &:link,
     &:visited {
-        font-size: $default-font-size;
+        font-size: $btn-text-font-size;
         color: $color-primary;
         display: inline-block;
         text-decoration: none;

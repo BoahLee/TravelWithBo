@@ -25,11 +25,22 @@ html {
 
 body {
     box-sizing: border-box;
-    padding: 3rem;
+    padding: 0;
 
     @include respond(tab-port) {
         padding: 0; // 
     }
+}
+
+.section__heading {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+}
+.container {
+    display: grid;
+    //grid-template-rows: 22vh repeat(7, min-content);
+    grid-template-columns: [full-start]repeat(12, minmax(0, 14rem)) [full-end];
 }
 
 ::selection {

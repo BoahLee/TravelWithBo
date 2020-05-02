@@ -1,0 +1,82 @@
+.review {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:$color-grey-light-2;
+    opacity: .75;
+    width: 65%;
+    transform: skewX(-12deg);
+    //margin: 5rem auto;
+    padding: 8rem 10rem 5rem 10rem;
+    
+
+    &__text {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__user {
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: skewX(12deg);
+
+        @include respond(phone) {
+            transform: skewX(0);
+        }
+    }
+
+    &__photo {
+        height: 6.5rem;
+        width: 6.5rem;
+        border-radius: 50%;
+        margin-right: 2.5rem;
+    }
+
+    &__user-name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+    }
+
+    &__user-date {
+        font-size: 1.4rem;
+    }
+
+    &__rating {
+        color: $color-primary;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-left: 2.5rem;
+    }
+
+    &::before {
+        content: "\201C";
+        position: absolute;
+        left: 1rem;
+        top: .1rem;
+        font-size: 15rem;
+        color: $color-primary;
+        font-family: sans-serif;
+        line-height: 1;
+        z-index: 1;
+    }
+
+    
+    @include respond(tab-port) {
+        width: 80%;
+        padding: 4rem;
+        padding-left: 7rem;
+        //margin: 5rem auto;
+    }
+
+    @include respond(phone) {
+        transform: skewX(0);
+        //margin: 0 auto;
+    }
+}
