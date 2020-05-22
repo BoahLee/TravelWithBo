@@ -1,132 +1,136 @@
 .about {
-    grid-column: full-start / full-end;
-    background-color: $color-grey-light-1;
-    padding: 10rem;
+  grid-column: full-start / full-end;
+  background-color: $color-grey-light-1;
+  padding: 10rem;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10rem;
 
-    @include respond(tab-port) {
-        grid-template-columns: 1fr;
-    }
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+
+  @include respond(phone) {
+    padding: 10rem 5rem;
+  }
 }
 
 .features {
-    grid-column: full-start / full-end;
+  grid-column: full-start / full-end;
+  padding: 10rem;
+  background-image: url(../img/header.jpeg);
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10rem;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
     padding: 10rem;
-    background-image: url(../img/header.jpeg);
-    background-size: cover;
+  }
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10rem;
-
-    @include respond(tab-port) {
-        grid-template-columns: 1fr;
-        padding: 10rem;
-    }
-
-    @include respond(phone) {
-        padding: 5rem 0;
-    }
+  @include respond(phone) {
+    padding: 5rem 0;
+  }
 }
 
 .tours {
-    
-    grid-column: full-start / full-end;
-    background-color: $color-grey-light-1;
-    padding: 10rem;
+  grid-column: full-start / full-end;
+  background-color: $color-grey-light-1;
+  padding: 10rem;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-gap: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 10rem;
 
-    @include respond(phone) {
-        padding: 10rem 5rem;
-    }
+  @include respond(phone) {
+    padding: 10rem 5rem;
+  }
 
-    @media only screen and(max-width: 500px) {
-        padding: 10rem 1rem;
-    }
+  @media only screen and(max-width: 500px) {
+    padding: 10rem 1rem;
+  }
 
-    &__heading,
-    &__cta {
-        grid-column: 1 / -1;
-        align-self: center;
-        justify-self: center;
-    }
-
+  &__heading,
+  &__cta {
+    grid-column: 1 / -1;
+    align-self: center;
+    justify-self: center;
+  }
 }
 
 .reviews {
-    grid-column: full-start / full-end;
-    position: relative;
+  grid-column: full-start / full-end;
+  position: relative;
+  padding: 10rem 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10rem;
+  justify-items: center;
+
+  @include respond(tab-port) {
     padding: 10rem 0;
+  }
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 10rem;
-    justify-items: center;
-
-    @include respond(tab-port) {
-        padding: 10rem 0;
-    }
-
-    // &__heading,
-    // &__cta {
-    //     grid-column: 1 / -1;
-    //     align-self: center;
-    //     justify-self: center;
-    // }
-
+  // &__heading,
+  // &__cta {
+  //     grid-column: 1 / -1;
+  //     align-self: center;
+  //     justify-self: center;
+  // }
 }
 
 .booking {
-    grid-column: full-start / full-end;
-    padding: 15rem 10rem;
+  grid-column: full-start / full-end;
+  padding: 15rem 10rem;
 
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 
-    @include respond(tab-port) {
-        padding: 10rem 5rem;
-    }
+  @include respond(tab-port) {
+    padding: 10rem 5rem;
+  }
 
-    @include respond(phone) {
-        padding: 10rem 5rem;
-    }
+  @include respond(phone) {
+    padding: 10rem 5rem;
+  }
 }
 
 .book {
-    background-image: linear-gradient(105deg, 
-                        rgba($color-white, .9) 0%,
-                        rgba($color-white, .9) 50%,
-                        transparent 100%), 
-                        url(../img/review-1.jpg);
-    background-size: cover;
-    background-position: center 70%;
-    border-radius: $border-radius-small;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 100%
+    ),
+    url(../img/review-1.jpg);
+  background-size: cover;
+  background-position: center 70%;
+  border-radius: $border-radius-small;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.2) 0%,
+        rgba($color-white, 0.9) 100%
+      ),
+      url(../img/header-1.jpeg);
+    background-position: top;
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right, 
-                            rgba($color-white, .2) 0%,
-                            rgba($color-white, .9) 100%),
-                            url(../img/header-1.jpeg);
-        background-position: top;
+      width: 80%;
     }
 
-    &__form {
-        width: 50%;
-        padding: 6rem;
-
-        @include respond(tab-port) {
-            width: 80%;
-        }
-
-        @include respond(phone) {
-            width: 100%;
-        }
+    @include respond(phone) {
+      width: 100%;
     }
+  }
 }
-
